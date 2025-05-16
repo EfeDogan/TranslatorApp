@@ -13,7 +13,6 @@ output_file = '/Users/efeemirhandogan/Documents/TranslatorApp/ceviriler.txt'
 def save_on_file(text):
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
-            # Clear file before write
             f.write(text + '\n')
             return True
     except Exception as e:
@@ -26,6 +25,10 @@ def on_press(key):
         if key == keyboard.Key.cmd:
             pass
 
+        elif key == keyboard.Key.esc:
+            print("Exiting...")
+            return False  # Stop listener
+        
         elif key.char == 'c':
             now = time.time()
             if now - last_cmd_time < 1:

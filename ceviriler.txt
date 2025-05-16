@@ -1,1 +1,0 @@
-HOCAM TestCampusnavigatorapp 3 ve 4 ne için test edilir? Çıktılarım tam olarak eşleşiyor ve diğer testlerden de 1 alıyorum, ancak Test 3 ve 4'ten 0 alıyorum.
